@@ -1,0 +1,176 @@
+/* === Fondo de la página === */
+body.platos {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  background: url("../imagens/fondo-platos.png") no-repeat center center/cover;
+}
+
+/* === Encabezado === */
+header {
+    
+  text-align: center;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    color: #fff;
+    text-align: center;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px;
+    background: rgba(255, 255, 255, 0.9);
+    position: fixed;   /* Siempre arriba */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* LOGO un poquito más grande */
+.logo img {
+    width: 200px;   /* antes era más pequeño */
+    height: auto;
+}
+
+/* Menú */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #d6d1d1;
+    background: black;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: background 0.3s;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background: #ffd000;
+    color: black;
+}
+
+/* Idioma */
+.idioma {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.idioma button {
+    background: #ffd000;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.idioma img {
+    height: 25px;
+    width: auto;
+    border-radius: 3px;
+}
+/* === Intro === */
+.intro {
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+.intro h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* === Tarjetas === */
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.tarjeta {
+  background: #fff;
+  color: #000;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.2s;
+}
+
+.tarjeta:hover {
+  transform: scale(1.05);
+}
+
+.tarjeta img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.tarjeta h3 {
+  margin: 0.8rem 0 0.5rem;
+  font-size: 1.2rem;
+  color: #c0392b;
+}
+
+.tarjeta p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.tarjeta a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #e67e22;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.tarjeta a:hover {
+  background: #d35400;
+}
+footer {
+  text-align: center;
+  margin-top: 30px;
+  padding: 15px;
+  background: #333;
+  color: #fff;
+}

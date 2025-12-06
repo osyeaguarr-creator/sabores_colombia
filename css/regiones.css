@@ -1,0 +1,157 @@
+/* ESTILOS GENERALES*/
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+/*HEADER*/
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+.nota {
+    margin-top: 10px;
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/*FONDO DE REGIONES*/
+.regiones {
+    background-image: url("../imagens/fondo-mapa-colombia.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*BOTONES DE REGIONES*/
+.botones-regiones {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: rgba(0, 0, 0, 0.55);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.btn-region {
+    text-decoration: none;
+    color: white;
+    background: #d62828;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-region:hover {
+    background: #f77f00;
+    transform: scale(1.05);
+}
+
+/*FOOTER*/
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    margin-top: 40px;
+}
+
+/*BOTÓN HAMBURGUESA*/
+.hamburguesa {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 2rem;
+    background: #d62828;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 14px;
+    cursor: pointer;
+    
+    z-index: 9999 !important;
+
+    transition: background 0.3s, transform 0.2s;
+}
+
+.hamburguesa:hover {
+    background: #f77f00;
+    transform: scale(1.1);
+}
+
+/*MENÚ LATERAL*/
+.menu-lateral {
+    position: fixed;
+    top: 0;
+    left: -260px;  
+    width: 250px;
+    height: 100%;
+    background: rgba(0,0,0,0.95);
+    padding-top: 80px;
+    transition: left 0.4s ease;
+    
+   
+    z-index: 9000;
+}
+
+.menu-lateral ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-lateral ul li {
+    margin: 20px 0;
+}
+
+.menu-lateral ul li a {
+    display: block;
+    padding: 12px 20px;
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.menu-lateral ul li a:hover {
+    background: #d62828;
+    border-radius: 6px;
+}
+
+/* Clase que abre el menú */
+.menu-lateral.abierto {
+    left: 0;
+}
+
+/*   RESPONSIVE*/
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .btn-region {
+        font-size: 1.1rem;
+    }
+
+    .hamburguesa {
+        font-size: 1.8rem;
+        padding: 6px 10px;
+    }
+}

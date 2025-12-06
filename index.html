@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores de Colombia - Inicio</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <!-- MENSAJE DE SALUDO-->
+    <div id="mensaje-saludo" class="saludo"></div>
+
+    <!-- HEADER -->
+    <header>
+        <!-- Logo -->
+        <div class="logo">
+            <img src="imagens/logo.png" alt="Logo de Sabores de Colombia" title="Sabores de Colombia">
+        </div>
+
+        <!-- Botón Hamburguesa-->
+        <button id="btnMenu" class="hamburguesa" aria-label="Abrir menú">☰</button>
+
+        <!-- Menú de navegación -->
+        <nav aria-label="Menú principal" role="navigation">
+            <ul id="menu">
+    <li><a href="index.html" title="Inicio">INICIO</a></li>
+
+    <li class="submenu">
+        <button class="submenu-btn">REGIONES ⬇</button>
+        <ul class="submenu-items">
+            <li><a href="caribe.html">Caribe</a></li>
+            <li><a href="region-pacifica.html">Pacífica</a></li>
+            <li><a href="region-andina.html">Andina</a></li>
+            <li><a href="region-orinoquia.html">Orinoquía</a></li>
+            <li><a href="amazonas.html">Amazonía</a></li>
+        </ul>
+    </li>
+
+    <li><a href="platos-destacados.html" title="Platos destacados de Colombia">PLATOS</a></li>
+    <li><a href="donde-probar.html" title="Dónde probar los platos">LUGARES</a></li>
+    <li><a href="contacto.html" title="Página de contacto">CONTACTO</a></li>
+</ul>
+
+        </nav>
+
+        <!-- Selector de idioma -->
+        <div class="idioma">
+            <button aria-label="Cambiar idioma">IDIOMA</button>
+            <img id="btnEs" src="imagens/bandera-colombia.png" alt="Cambiar a español" title="Español">
+            <img id="btnEn" src="imagens/bandera-usa.png" alt="Cambiar a inglés" title="Inglés">
+  
+        </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+        <section class="hero">
+            <div class="contenido">
+                <h1>DESCUBRE LOS SABORES QUE HACEN ÚNICA A COLOMBIA</h1>
+
+                <div class="botones">
+                    <a href="regiones.html" class="btn negro">VISTA POR REGIONES</a>
+                    <a href="platos-destacados.html" class="btn amarillo">PLATOS DESTACADOS</a>
+                </div>
+
+                <div class="flecha">
+                    <span aria-hidden="true">⬇</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Sabores de Colombia — Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- ENLACE AL JAVASCRIPT-->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
